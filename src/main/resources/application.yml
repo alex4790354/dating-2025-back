@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: dating
+  datasource:
+    url: jdbc:postgresql://localhost:5433/dating
+    username: dating_admin
+    password: dating
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    show-sql: true
